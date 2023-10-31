@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      bruno: ["Bruno Ace SC", " sans-serif"],
+    }
   },
   plugins: [],
 }
