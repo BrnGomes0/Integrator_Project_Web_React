@@ -4,14 +4,12 @@ const SquareBoxSmaller = ({imageURL, title, body}) => {
             <div className="">
                 <img src={imageURL} alt="" className=" w-full rounded-t-lg"/>
             </div>
-            <div className="text-white flex flex-col gap-2">
+            <div className="text-white flex flex-col gap-4 p-2">
                 <h1 className="font-bold">{title}</h1>
                 <p className="text-xs">{body}</p>
-            </div>
-            <div className="text-white">
-               <a>
-                <p className="text-xs font-bold">Know More <FontAwesomeIcon icon="fa-solid fa-arrow-right" style={{color: "#e4ee00"}} /></p>
-               </a>
+                <a href="/">
+                    <p className="text-xs text-white flex gap-2">Know More <img className='w-4'src="src/assets/imgs/seta-direita.png" alt="Seta-Direita"/></p>
+                </a>
             </div>
         </div>
     );
