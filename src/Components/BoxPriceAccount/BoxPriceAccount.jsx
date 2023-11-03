@@ -4,7 +4,7 @@ const BoxPriceAccount = ({title, initialPrice, value, chosed, type}) => {
     const [moreChosed, setMoreChosed] = useState(chosed);
     const [price, setPrice] = useState(initialPrice);
     return(
-        <div className="bg-[#3E3E3E] flex flex-col  justify-center items-center rounded-lg gap-y-6 p-4"> 
+        <div className="bg-[#3E3E3E] flex flex-col  justify-center items-center rounded-lg gap-y-6 p-4 w-80 h-68"> 
             <div>
                 {
                     moreChosed ? <div className="bg-[#E4EE00] text-black rounded-md w-40 h-8 flex justify-center items-center ">More Chosed</div> : <></>

@@ -8,6 +8,7 @@ export default {
     extend: {},
     fontFamily: {
       bruno: ["Bruno Ace SC", " sans-serif"],
+      montserrat: ["Montserrat", "sans-serif"],
     }
   },
   plugins: [],

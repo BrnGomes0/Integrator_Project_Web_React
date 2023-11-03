@@ -1,7 +1,8 @@
-import Navbar from "../../Components/Navbar/Navbar";
-import SquareBoxBig from "../../Components/SquareBoxBig/SquareBoxBig";
-import SquareBoxSmaller from "../../Components/SquareBoxSmaller/SquareBoxSmaller";
-import BoxPriceAccount from "../../Components/BoxPriceAccount/BoxPriceAccount";
+import Navbar from "../../Components/Navbar/Navbar.jsx";
+import SquareBoxBig from "../../Components/SquareBoxBig/SquareBoxBig.jsx";
+import SquareBoxSmaller from "../../Components/SquareBoxSmaller/SquareBoxSmaller.jsx";
+import BoxPriceAccount from "../../Components/BoxPriceAccount/BoxPriceAccount.jsx";
+import Footer from "../../Components/Footer/Footer.jsx"
 
 const HomeScreen = () => {
     return(
@@ -60,7 +61,7 @@ const HomeScreen = () => {
                         initialPrice={false}
                         value='$28.22'
                         chosed={false}
-                        type='Personal Physics'
+                        type='Personal'
                     />
                     <BoxPriceAccount
                         title='Essential Plain'
@@ -78,6 +79,7 @@ const HomeScreen = () => {
                     />
                 </div>
             </section>
+            <Footer/>
         </div>
     );
 }
