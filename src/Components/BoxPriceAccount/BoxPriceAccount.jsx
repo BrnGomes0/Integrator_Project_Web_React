@@ -2,7 +2,6 @@ import { useState } from "react";
 
 const BoxPriceAccount = ({title, initialPrice, value, chosed, type}) => {
     const [moreChosed, setMoreChosed] = useState(chosed);
-    const [price, setPrice] = useState(initialPrice);
     return(
         <div className="bg-[#3E3E3E] flex flex-col  justify-center items-center rounded-lg gap-y-6 p-4 w-80 h-68"> 
             <div>
