@@ -27,6 +27,7 @@ const LoginScreen = () => {
                     className='w-96 h-10'
                     onclick={onclickedLogin}
                 />
+                <p>Don't have a account? <a href="/register" className="text-[#A7BBCE]">Create account</a></p>
             </div>
         </section>
     );

@@ -7,7 +7,7 @@ const ContextNavbar = () => {
                     <a href="/" className="hover:underline hover:border-b-2 border-transparent border-b">About</a>
                 </li>
                 <li className="inline">
-                    <a href="/" className="hover:underline hover:border-b-2 border-transparent border-b">Investments</a>
+                    <a href="https://statusinvest.com.br/acoes" className="hover:underline hover:border-b-2 border-transparent border-b">Investments</a>
                 </li>
                 <li className="inline">
                     <a href="/" className="hover:underline hover:border-b-2 border-transparent border-b">Costs</a>

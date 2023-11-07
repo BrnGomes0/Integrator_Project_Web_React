@@ -10,6 +10,7 @@ const SquareBoxBig = ({title, imageURL, body}) => {
                 <div className="text-black">
                         <CustomButton
                         title='Read More'
+                        className='w-32 h-8'
                         />
                 </div>
             </div>
