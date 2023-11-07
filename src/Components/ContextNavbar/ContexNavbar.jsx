@@ -1,21 +1,22 @@
+import React from "react";
 const ContextNavbar = () => {
     return(
-        <div>
+        <div className="navContext">
             <ul className="text-white flex w-[35rem] justify-between">
-                <li>
-                    <a href="/">About</a>
+                <li className="inline">
+                    <a href="/" className="hover:underline hover:border-b-2 border-transparent border-b">About</a>
                 </li>
-                <li>
-                    <a href="/">Investments</a>
+                <li className="inline">
+                    <a href="/" className="hover:underline hover:border-b-2 border-transparent border-b">Investments</a>
                 </li>
-                <li>
-                    <a href="/">Costs</a>
+                <li className="inline">
+                    <a href="/" className="hover:underline hover:border-b-2 border-transparent border-b">Costs</a>
                 </li>
-                <li>
-                    <a href="/">Tools</a>
+                <li className="inline">
+                    <a href="/" className="hover:underline hover:border-b-2 border-transparent border-b">Tools</a>
                 </li>
-                <li>
-                    <a href="/">Service</a>
+                <li className="inline">
+                    <a href="/" className="hover:underline hover:border-b-4 border-transparent border-b">Service</a>
                 </li>
             </ul>
         </div>

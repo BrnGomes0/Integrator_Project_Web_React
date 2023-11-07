@@ -40,3 +40,23 @@ body {
     font-weight: 400;
     line-height: normal;
 }
+
+.navList:hover{
+
+}
+
+.navList::after{
+    content:'';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #E4EE00;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-Link:hover::after {
+    opacity: 1;
+}
