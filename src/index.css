@@ -17,3 +17,26 @@ body {
     display: block;
     font-size: 1.2rem;
 }
+
+.titleRegistred {
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.paragraphRegistred {
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.namePerson {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

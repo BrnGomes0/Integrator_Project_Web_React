@@ -6,14 +6,18 @@ import Footer from './Components/Footer/Footer.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import HomeScreen from './Screens/HomeScreen/HomeScreen.jsx';
 import RegisterScreen from './Screens/RegisterScreen/RegisterScreen.jsx';
+import RegistredScreen from './Screens/RegistredScreen/RegistredScreen.jsx'
+import LoginScreen from './Screens/LoginScreen/LoginScreen.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar />
         <Routes>
-          <Route path="/" element={<HomeScreen/>} />
-          <Route path="/register" element={<RegisterScreen/>} />
+          <Route path="/" element={<HomeScreen/>}/>
+          <Route path="/register" element={<RegisterScreen/>}/>
+          <Route path="/registred" element={<RegistredScreen/>}/>
+          <Route path="/login" element={<LoginScreen/>}/>
         </Routes>
       <Footer />
     </BrowserRouter>
