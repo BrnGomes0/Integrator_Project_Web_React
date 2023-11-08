@@ -7,8 +7,8 @@ import Footer from "../../Components/Footer/Footer.jsx"
 const HomeScreen = () => {
     return(
         <section className="bg-[#252525] pt-16 flex flex-col justify-center items-center">
-            <div className="">
-                <img src="src/assets/imgs/imageNY.png" alt="Image New York"/>
+            <div className="md: grid grid-cols-1">
+                <img src="src/assets/imgs/imageNY.png" alt="Image New York" className="w-full"/>
             </div>
             <h1 className="text-white font-bold text-base title mt-28 text-center">Financial products and services</h1>
             <p className="text-white text-center mt-4 mb-16">Everything Bubo offers you to improve your financial life</p>
@@ -17,7 +17,7 @@ const HomeScreen = () => {
                 body='Tickets, hotels, food and tours with 10% discount'
                 imageURL='https://img.freepik.com/fotos-premium/a-estatua-da-liberdade-com-o-fundo-do-horizonte-da-cidade-de-manhattan-pontos-turisticos-da-cidade-de-nova-york-eua_255553-377.jpg'
             />
-            <div className="grid grid-cols-2 w-1/2 gap-x-2 gap-y-10 pt-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-1/2 gap-x-2 gap-y-10 pt-20">
                 <SquareBoxSmaller
                     title='Account Digital'
                     body='The best digital account ever created in history'
@@ -53,7 +53,7 @@ const HomeScreen = () => {
                 <h1 className="font-bold titleTwo">Discover the best platforms available to you</h1>
                 <p>Customize your experience even further with the best bank ever created!</p>
             </div>
-            <div className="grid grid-cols-3 gap-10 mb-40">
+            <div className="grid grid-cols-1 mb:grid-cols-3 gap-20 mb-40 ">
                 <BoxPriceAccount
                     title='Essential Plain'
                     initialPrice={false}
@@ -67,6 +67,7 @@ const HomeScreen = () => {
                     value='$29.98'
                     chosed={true}
                     type='Investor'
+                    className=''
                 />
                 <BoxPriceAccount
                     title='Elite Plan'
