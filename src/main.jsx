@@ -8,6 +8,7 @@ import HomeScreen from './Screens/HomeScreen/HomeScreen.jsx';
 import RegisterScreen from './Screens/RegisterScreen/RegisterScreen.jsx';
 import RegistredScreen from './Screens/RegistredScreen/RegistredScreen.jsx'
 import LoginScreen from './Screens/LoginScreen/LoginScreen.jsx'
+import PageError from './Screens/Error404Screen/PageError.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/register" element={<RegisterScreen/>}/>
           <Route path="/registred" element={<RegistredScreen/>}/>
           <Route path="/login" element={<LoginScreen/>}/>
+          <Route path='*' element={<PageError/>}/>
         </Routes>
       <Footer />
     </BrowserRouter>

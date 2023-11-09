@@ -1,6 +1,10 @@
-const FirstScreen = () => {
+import React from "react";
+
+function FirstScreen (){
     return(
-        
+        <section>
+            
+        </section>
     );
 }
 

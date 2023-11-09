@@ -30,7 +30,7 @@ const Footer = () => {
                     </ul>
                 </ul>
             <hr className="w-[107.5rem]"/>
-            <div className="text-white font-montserrat flex gap-20 font-bruno">
+            <div className="text-white font-montserrat font-semibold flex gap-20 ">
                 <p>© 2023 BUBO BANK S.A. CNPJ: 23.678.921/0001-01</p>
                 <p>Manhattan | NY - The Stack, at 1133 Melville Street . CEP: 10001</p>
             </div>

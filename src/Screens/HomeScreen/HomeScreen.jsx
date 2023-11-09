@@ -53,7 +53,7 @@ const HomeScreen = () => {
                 <h1 className="font-bold titleTwo">Discover the best platforms available to you</h1>
                 <p>Customize your experience even further with the best bank ever created!</p>
             </div>
-            <div className="grid grid-cols-1 mb:grid-cols-3 gap-20 mb-40 ">
+            <div className="grid grid-cols-3 gap-20 pb-40 ">
                 <BoxPriceAccount
                     title='Essential Plain'
                     initialPrice={false}
