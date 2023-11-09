@@ -25,6 +25,9 @@ export default {
     fontFamily: {
       bruno: ["Bruno Ace SC", " sans-serif"],
       montserrat: ["Montserrat", "sans-serif"],
+    },
+    screens: {
+      'md': '884',
     }
   },
   plugins: [],
