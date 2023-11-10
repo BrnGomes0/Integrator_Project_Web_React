@@ -4,7 +4,7 @@ import LoginIcone from "../LoginIcone/LoginIcone";
 
 const  Navbar = () => {
     return(
-        <div className="bg-[#252525] flex justify-between items-center w-full h-12 p-8 fixed">
+        <div className="bg-[#252525] flex justify-between items-center w-full h-12 p-8 fixed z-10">
             <Logo/>
             <ContextNavbar/>
             <LoginIcone/>

@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const ContextNavbar = () => {
     let links = [
-        {name: "About", link:"/"},
-        {name: "Transparent", link:"/"},
+        {name: "About", link:"/about"},
+        {name: "Investments", link:"/"},
         {name: "Costs", link:"/"},
         {name: "Tools", link:"/"},
         {name: "Service", link:"/"}

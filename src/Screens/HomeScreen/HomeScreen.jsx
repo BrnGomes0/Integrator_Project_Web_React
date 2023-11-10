@@ -1,8 +1,6 @@
-import Navbar from "../../Components/Navbar/Navbar.jsx";
 import SquareBoxBig from "../../Components/SquareBoxBig/SquareBoxBig.jsx";
 import SquareBoxSmaller from "../../Components/SquareBoxSmaller/SquareBoxSmaller.jsx";
 import BoxPriceAccount from "../../Components/BoxPriceAccount/BoxPriceAccount.jsx";
-import Footer from "../../Components/Footer/Footer.jsx"
 
 const HomeScreen = () => {
     return(
