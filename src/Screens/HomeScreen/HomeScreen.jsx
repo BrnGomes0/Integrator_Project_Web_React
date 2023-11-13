@@ -15,7 +15,7 @@ const HomeScreen = () => {
                 body='Tickets, hotels, food and tours with 10% discount'
                 imageURL='https://img.freepik.com/fotos-premium/a-estatua-da-liberdade-com-o-fundo-do-horizonte-da-cidade-de-manhattan-pontos-turisticos-da-cidade-de-nova-york-eua_255553-377.jpg'
             />
-            <div className="grid grid-cols-2 md:grid-cols-1 w-1/2 gap-x-2 gap-y-10 pt-20">
+            <div className="grid grid-cols-2 md:grid-cols-1 w-1/2 gap-x-2 gap-y-10 pt-20" id="tools">
                 <SquareBoxSmaller
                     title='Account Digital'
                     body='The best digital account ever created in history'
@@ -51,7 +51,7 @@ const HomeScreen = () => {
                 <h1 className="font-bold titleTwo">Discover the best platforms available to you</h1>
                 <p>Customize your experience even further with the best bank ever created!</p>
             </div>
-            <div className="grid grid-cols-3 gap-20 pb-40 md:grid-cols-1 sm:grid-cols-1">
+            <div className="grid grid-cols-3 gap-20 pb-40 md:grid-cols-1 sm:grid-cols-1" id="costs">
                 <BoxPriceAccount
                     title='Essential Plain'
                     initialPrice={false}

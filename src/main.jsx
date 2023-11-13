@@ -10,6 +10,7 @@ import RegistredScreen from './Screens/RegistredScreen/RegistredScreen.jsx'
 import LoginScreen from './Screens/LoginScreen/LoginScreen.jsx'
 import PageError from './Screens/Error404Screen/PageError.jsx';
 import AboutScreen from './Screens/AboutScreen/AboutScreen.jsx';
+import PageError500 from './Screens/Error500Screen/Error500Screen.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/registred" element={<RegistredScreen/>}/>
           <Route path="/login" element={<LoginScreen/>}/>
           <Route path="*" element={<PageError/>}/>
+          <Route path="/500" element={<PageError500/>}/>
           <Route path="/about" element={<AboutScreen/>}/>
         </Routes>
       <Footer />

@@ -1,12 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 const ContextNavbar = () => {
     let links = [
         {name: "About", link:"/about"},
-        {name: "Investments", link:"/"},
-        {name: "Costs", link:"/"},
-        {name: "Tools", link:"/"},
+        {name: "Investments", link:"https://statusinvest.com.br/acoes"},
+        {name: "Costs", link:"#costs"},
+        {name: "Tools", link:"#tools"},
         {name: "Service", link:"/"}
     ];
     return(
