@@ -1,7 +1,7 @@
 import CustomInput from "../../Components/CustomInput/CustomInput.jsx";
 import CustomButton from "../../Components/CustomButton/CustomButton.jsx"
-import api from '../../api/Api.jsx'
 import { useState } from "react";
+import axios from "axios";
 
 
 const RegisterScreen = () => {
@@ -11,21 +11,30 @@ const RegisterScreen = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('')
 
-    const registred = () => {
-        try{
-            api.post("token/", {
-                email: email, 
-                password: password,
-                first_name: first_name,
-                last_name: last_name,
-                cpf: cpf,
-            }).then(function(response){
-                console.log(response.data)
-            })
-        }catch(error){
-            console.log(error)
+    const saveData = async () => {
+        try {
+            const result = await axios.post(
+                'http://127.0.0.1:8000/api/v1/user/create',
+                {
+                    email: email,
+                    password: password,
+                    first_name: first_name,
+                    last_name: last_name,
+                    cpf: cpf,
+                },
+                {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                }
+            );
+            console.log(result.data);
+        } catch (error) {
+            console.log(error.response);
         }
-    }
+    };
+    
+
     return(
         <section className="bg-[#252525] pt-16 flex justify-center items-center gap-8 p-28">
             <div className="w-1/2 flex flex-col gap-4 justify-center items-center p-20">
@@ -78,7 +87,7 @@ const RegisterScreen = () => {
                 <CustomButton
                     title='Create Account'
                     className='w-96 h-10'
-                    onclick={() => registred()}
+                    onclick={() => saveData()}
                 />
             </div>
         </section>
