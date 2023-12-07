@@ -1,9 +1,12 @@
+// Importando os componentes necessários
 import SquareBoxBig from "../../Components/SquareBoxBig/SquareBoxBig.jsx";
 import SquareBoxSmaller from "../../Components/SquareBoxSmaller/SquareBoxSmaller.jsx";
 import BoxPriceAccount from "../../Components/BoxPriceAccount/BoxPriceAccount.jsx";
-
+// Definindo o componente HomeScreen
 const HomeScreen = () => {
+        // Estrutura JSX para a tela inicial
     return(
+                // Seção principal com um fundo escuro
         <section className="bg-[#252525] pt-16 flex flex-col justify-center items-center">
             <div className="md: grid grid-cols-1">
                 <img src="src/assets/imgs/imageNY.png" alt="Image New York" className="w-full"/>
@@ -16,6 +19,7 @@ const HomeScreen = () => {
                 imageURL='https://img.freepik.com/fotos-premium/a-estatua-da-liberdade-com-o-fundo-do-horizonte-da-cidade-de-manhattan-pontos-turisticos-da-cidade-de-nova-york-eua_255553-377.jpg'
             />
             <div className="grid grid-cols-2 md:grid-cols-1 w-1/2 gap-x-2 gap-y-10 pt-20" id="tools">
+                                {/* Caixas menores para diferentes ferramentas financeiras */}
                 <SquareBoxSmaller
                     title='Account Digital'
                     body='The best digital account ever created in history'
@@ -52,6 +56,7 @@ const HomeScreen = () => {
                 <p>Customize your experience even further with the best bank ever created!</p>
             </div>
             <div className="grid grid-cols-3 gap-20 pb-40 md:grid-cols-1 sm:grid-cols-1" id="costs">
+                                {/* Caixas de preços para diferentes planos de conta */}
                 <BoxPriceAccount
                     title='Essential Plain'
                     initialPrice={false}
