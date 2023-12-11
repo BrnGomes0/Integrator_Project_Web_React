@@ -18,7 +18,7 @@ const RegisterScreen = () => {
         try {
             // Making a POST request to the server with user registration data
             const result = await axios.post(
-                'http://127.0.0.1:8000/api/v1/user/create',
+                'http://10.109.71.5:8000/api/v1/user/create',
                 {
                     email: email,
                     password: password,
@@ -29,7 +29,7 @@ const RegisterScreen = () => {
                 {
                     headers: {
                         'Content-Type': 'application/json'
-                    },
+                    },  
                 }
             );
             // Logging the result data on successful registration

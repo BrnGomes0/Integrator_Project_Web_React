@@ -1,5 +1,7 @@
 // Importing the CustomButton component from its location
+import axios from 'axios';
 import CustomButton from '../../Components/CustomButton/CustomButton.jsx'
+import { useState } from 'react';
 
 // Functional component for the registration success screen
 const RegisterScreen = () => {
@@ -18,7 +20,7 @@ const RegisterScreen = () => {
                 <h1 className='titleRegistred'>Thank you for Registering, </h1>
 
                 {/* Name of the registered person with a specific styling */}
-                <h2 className='text-[#E4EE00] namePerson'>BRUNO</h2>
+                <h2 className='text-[#E4EE00] namePerson'>{first_name}</h2>
 
                 {/* Paragraph with a welcoming message */}
                 <p className='paragraphRegistred text-base'>We are very happy to welcome you</p>
